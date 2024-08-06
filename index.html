@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sarah's birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home'); return false;" class="active">Home</a></li>
+            <li><a href="#" onclick="showPage('when-we-first-met'); return false;">When We First Met</a></li>
+            <li><a href="#" onclick="showPage('songs'); return false;">Songs</a></li>
+            <li><a href="#" onclick="showPage('i-am-sorry'); return false;">I Am Sorry</a></li>
+            <li><a href="#" onclick="showPage('happy-birthday'); return false;">Happy Birthday</a></li>
+        </ul>
+    </nav>
+    <div id="content" class="content">
+        <!-- Home -->
+        <div id="home" class="info-page">
+            <img id="home-img" src="images/its your day.jpg" alt="Home Image">
+        </div>
+
+        <!-- When We First Met -->
+        <div id="when-we-first-met" class="info-page">
+            <h1>When We First Met</h1>
+            <img id="first-meet-img" src="images/first.png" alt="Picture of first meeting" height="300px"/>
+            <p id="first-meet-text">We met on 24/10/2024, and I could call it the day I met the best person in my life. I won’t ever forget it as long as I live.</p>
+        </div>
+        
+        <!-- Songs -->
+        <div id="songs" class="info-page">
+            <h1>Songs</h1>
+            <div class="audio-player">
+                <h2>Happier by Yungblud</h2>
+                <div class="audio-controls">
+                    <button class="play-button" onclick="togglePlay('happier-audio')">Play</button>
+                    <audio id="happier-audio" class="hidden" controls>
+                        <source src="songs/YUNG.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+            <div class="audio-player">
+                <h2>I'm Super Shy</h2>
+                <div class="audio-controls">
+                    <button class="play-button" onclick="togglePlay('super-shy-audio')">Play</button>
+                    <audio id="super-shy-audio" class="hidden" controls>
+                        <source src="songs/newjeans.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        
+        <!-- I Am Sorry -->
+        <div id="i-am-sorry" class="info-page">
+            <h1>I Am Sorry</h1>
+            <img id="sorry-img" src="images/sorry1.jpg" alt="Image for I Am Sorry" />
+        </div>
+        
+        <!-- Happy Birthday -->
+        <div id="happy-birthday" class="info-page">
+            <h1>Happy Birthday</h1>
+            <div id="birthday-images">
+                <img class="birthday-img" src="images/1.jpg" alt="Birthday Image 1" />
+                <img class="birthday-img" src="images/2.jpg" alt="Birthday Image 2" />
+                <img class="birthday-img" src="images/3.jpg" alt="Birthday Image 3" />
+                <img class="birthday-img" src="images/4.jpg" alt="Birthday Image 4" />
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
